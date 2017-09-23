@@ -4,9 +4,9 @@
 # http://stackoverflow.com/questions/4880290/how-do-i-create-a-crontab-through-a-script
 # http://stackoverflow.com/questions/14450866/search-for-a-cronjob-with-crontab-l/14451184#14451184
 
-#cd /var
+cd /var
 #mkdir www
-#chmod 777 /www
+chmod 777 www
 #chmod 777 /var/www
 
 # apt-get install -y git
