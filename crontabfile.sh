@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # http://stackoverflow.com/questions/878600/how-to-create-cronjob-using-bash
 # http://stackoverflow.com/questions/4880290/how-do-i-create-a-crontab-through-a-script
