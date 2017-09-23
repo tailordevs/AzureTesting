@@ -4,7 +4,13 @@
 # http://stackoverflow.com/questions/4880290/how-do-i-create-a-crontab-through-a-script
 # http://stackoverflow.com/questions/14450866/search-for-a-cronjob-with-crontab-l/14451184#14451184
 
-JOB='*/5 * * * * /path/to/job -with args'
+cd /var
+mkdir www
+chmod 777 /www
+chmod 777 /var/www
+
+
+JOB='*/1 * * * * /bin/sh -c 'cd /var/www/ && git pull origin master' > /var/www/autodeploy.txt'
 
 FINDJOB=$(crontab -l | grep -F "$JOB")
 
