@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export CLIENTID= $1;  			#setting up environment variable
+
 ###################
 # apt-get modules #
 ###################
@@ -12,10 +14,11 @@ apt-get install -y git
 # Install Php  	 #
 ##################
 
-add-apt-repository ppa:ondrej/php    	# This ll add php in repository
+#add-apt-repository ppa:ondrej/php    	# This ll add php in repository
 apt-get -y update			# update repository	
-apt-get install -y php5.6		# Install php5.6
+#apt-get install -y php5.6		# Install php5.6
 #apt install php libapache2-mod-php
+apt-get install php5-common php5-cli php5-curl
 
 ##################
 # Python Module  #
