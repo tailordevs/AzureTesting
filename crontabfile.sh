@@ -9,12 +9,16 @@ mkdir www
 #chmod 777 www
 #chmod 777 /var/www
 
+
+
 apt-get install -y git
 cd /var/www/
+mkdir gitdeploy
+cd gitdeploy
 git init
 git remote add origin https://github.com/desairavi1101/Train-Application.git	
 
-JOB="*/1 * * * * /bin/sh -c 'cd /var/www/ && git pull origin master' > /var/www/autodeploy.txt"
+JOB="*/1 * * * * /bin/sh -c 'cd /var/www/gitdeploy/ && git pull origin master' > /var/www/autodeploy.txt"
 
 FINDJOB=$(crontab -l | grep -F "$JOB")
 
