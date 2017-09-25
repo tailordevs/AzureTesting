@@ -6,7 +6,7 @@
 
 apt-get -y update 			# update repository
 apt-get install -y python-pip  		# This is mandatory for pip packages
-apt-get install git
+apt-get install -y git
 
 ##################
 # Install Php  	 #
@@ -26,7 +26,7 @@ pip install -r https://raw.githubusercontent.com/tailordevs/AzureTesting/master/
 
 #########################
 # Folder Management 	#
-#########################
+#########################	
 
 cd /var
 mkdir -p www
