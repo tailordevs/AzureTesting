@@ -19,7 +19,7 @@ apt-get install -y git
 apt-get -y update			# update repository	
 #apt-get install -y php5.6		# Install php5.6
 #apt install php libapache2-mod-php
-apt-get install php5-common php5-cli php5-curl
+apt-get install -y php5-common php5-cli php5-curl
 
 ##################
 # Python Module  #
