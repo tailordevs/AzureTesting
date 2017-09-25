@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export CLIENTID= $1;  			#setting up environment variable
+CLIENTID= $1;  				
+export $CLIENTID			#setting up environment variable
 
 ###################
 # apt-get modules #
