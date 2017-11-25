@@ -9,7 +9,7 @@ export cid=$1			#setting up environment variable
 
 apt-get -y update 			# update repository
 apt-get install -y python-pip # This is mandatory for pip packages
-apt-get install python-numpy # This is mandatory for pip packages
+apt-get install -y python-numpy # This is mandatory for pip packages
 apt-get install -y git
 
 ##################
