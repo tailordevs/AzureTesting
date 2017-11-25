@@ -27,7 +27,7 @@ apt-get install -y php5-common php5-cli php5-curl
 # Python Module  #
 ##################
 
-pip install —upgrade setuptools
+pip install —-upgrade setuptools
 pip install -r https://raw.githubusercontent.com/tailordevs/AzureTesting/master/requirement.txt 	#link can be change
 
 
