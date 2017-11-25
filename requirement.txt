@@ -25,7 +25,6 @@ cryptography==1.8.1
 demjson==2.2.4
 httplib2==0.8
 lockfile==0.8
-lxml==3.3.3
 pandas
 pdfkit==0.6.1
 psutil==5.2.2
